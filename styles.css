@@ -1,0 +1,405 @@
+*, ::after, ::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+button:active, button:focus, input[type=submit]:active, input[type=submit]:focus,
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
+    outline: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+input{
+	-webkit-appearance: none;
+}
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.15s linear;
+}
+
+:root{
+    --highlight-color: #22BB68;
+    --highlight-gradient: #22BB68CC;
+    --highlight-light: #E9F8F0;
+    --highlight-light-transparent: #E9F8F000;
+    --textcolor: #111111;
+    --grey: #27346A10;
+    --headerheight : 80px;
+
+    --images-shadow : 0 0 20px #00000015;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: var(--highlight-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    background: white;
+    color: var(--textcolor);
+    padding-top: var(--headerheight);
+}
+
+/* HEADER */
+header{
+    color: var(--highlight-color);
+    padding: 0 30px;
+    box-shadow: 0 8px 8px #00000010;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--headerheight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    background: white;
+}
+
+header img{
+    height: 30px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-link{
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.menu-link {
+    font-weight: 500;
+    margin: 0 24px;
+    font-size: 15px;
+    line-height: var(--headerheight);
+}
+
+/* BANNER */
+section{
+    margin-bottom: 120px;
+}
+
+.banner{
+    height: max(70vh, 550px);
+    background: linear-gradient(var(--highlight-gradient),var(--highlight-gradient)),no-repeat url(./assets/img/banner_img-cottonbro-studio.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 10vw;
+    padding-top: 10%;
+    z-index: 5;
+    position: relative;
+    align-items: flex-start;
+}
+
+.banner-logo{
+    margin-bottom: 30px;
+    height: 70px;
+}
+h1{
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    width: 400px;
+    margin-bottom: 150px;
+}
+
+.download-message{
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+
+.download img{
+    height: 50px;
+}
+
+.ellipsis,.banner-car, .banner-decoration{
+    position: absolute;
+}
+.ellipsis,.banner-car{
+    bottom: 0;
+}
+.banner-decoration{
+    top: 0;
+}
+
+.ellipsis {
+    width: 150%;
+    height: 133%;
+    clip-path: ellipse(60% 40%);
+    background: white;
+    transform: translate(-10%, 65%) rotate(-2deg);
+}
+
+.banner-car{
+    right: 0;
+    transform: translate(-10vw,10%);
+}
+
+.banner-decoration{
+    right: 0;
+    width: 50%;
+}
+
+/* APP PRESENTATION */
+h2{
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+.subline{
+    text-align: center;
+    color: var(--highlight-color);
+    font-size: 26px;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.user-description{
+    display: flex;
+    padding: 120px 0 0;
+    justify-content: space-between;
+    background: no-repeat url(./assets/svg/driver-decoration.svg);
+    background-position: left 50px;
+}
+
+.user-description.reverse{
+    flex-direction: row-reverse;
+    background: no-repeat url(./assets/svg/passenger-decoration.svg);
+    background-position: right 100px top 50px;
+}
+
+.left-block{
+    width: 350px;
+}
+
+.description-block{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.step{
+    font-size: 20px;
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    background: var(--highlight-light);
+    color: var(--highlight-color);
+    font-weight: 700;
+    margin-right: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 32px;
+}
+
+.h4container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.text{
+    flex: 1;
+}
+
+.description{
+    opacity: 0.5;
+}
+
+.btn-icon{
+    vertical-align: middle;
+    margin-right: 8px;
+    fill:white;
+}
+
+.signup{
+    margin-left: 62px;
+    box-shadow: 0 6px 8px #00000025;
+    line-height: 30px;
+}
+.signup:hover{
+    background: var(--textcolor);
+}
+
+.presentation-images{
+    position: absolute;
+    box-shadow: var(--images-shadow);
+    border-radius: 20px;
+    height: 450px;
+    right: 0;
+}
+.reverse .presentation-images{
+    right: unset;
+}
+
+.right-block{
+    position: relative;
+}
+
+.right{
+    top: 100px;
+}
+.middle{
+    top: 50px;
+    right: 180px;
+}
+
+.left{
+    right: 360px;
+}
+
+.reverse .middle{
+    left: 180px;
+}
+
+.reverse .right{
+    left: 360px;
+}
+
+/* PERKS */
+#perks .container{
+    display: flex;
+    justify-content: center;
+}
+
+.perks-headline{
+    font-size: 32px;
+    width: fit-content;
+    margin: 0 auto 42px;
+    position: relative;
+    display: flex;
+}
+
+.youmoovcan{
+    height: 45px;
+    margin: 0 16px;
+}
+
+.perks-headline::before,
+.perks-headline::after{
+    position: absolute;
+    top: 50%;
+}
+.perks-headline::before{
+    content: 'Avec';
+    left: 0;
+    transform: translate(-100%, -75%);
+}
+.perks-headline::after{
+    content: 'vous pouvez';
+    right: 0;
+    transform: translate(100%, -75%);
+}
+
+.perk{
+    display: flex;
+    width: 275px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(var(--highlight-light), var(--highlight-light-transparent));
+    border-radius: 20px;
+    margin: 0 15px 50px;
+    padding: 24px;
+}
+.perk img{
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.perk p {
+    text-align: center;
+}
+
+.download-links{
+    text-align: center;
+}
+
+#perks .download-message{
+    color: var(--highlight-color);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* ONBOARDING */
+
+#onboarding{
+    text-align: center;
+}
+#onboarding h2{
+    margin-bottom: 80px;
+}
+#onboarding h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.onboading-process{
+    margin-bottom: 120px;
+}
+.onboading-process h4{
+    margin: 0 auto 50px;
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.onboarding-screen{
+    height: 450px;
+    margin: 0 10px 50px;
+    box-shadow: var(--images-shadow);
+}
+.onboading-process .signup{
+    margin-left: 0;
+    background: var(--textcolor);
+}
