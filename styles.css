@@ -9,7 +9,7 @@ a {
   color: unset;
 }
 
-ul,ol{
+ul:not(.dots),ol{
 	list-style: none;
 }
 
@@ -101,6 +101,20 @@ header img{
 
 #menu{
     display: flex;
+}
+
+#menu-title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(40px,5px);
+    display: none;
+}
+
+#menu-title img{
+    height: 100%;
 }
 
 .menu-link a{
@@ -592,6 +606,7 @@ input, textarea{
     padding-left: 10px;
     font-size: 15px;
     margin-bottom: 10px;
+    caret-color: var(--highlight-color);
 }
 textarea{
     width: 100%;
@@ -814,15 +829,22 @@ small{
         height: 100%;
         width: 240px;
         padding: 100px 0;
-        background-color: white;
+        background: var(--highlight-light);
         box-shadow: -4px 0 4px #11111115;
         z-index: 70;
         transform: translateX(105%);
     }
 
+    #menu-title{
+        display: block;
+    }
+
     .menu-link{
         margin: 0;
         padding-left: 40px;
+        height: 50px;
+        color: var(--textcolor);
+        font-weight: 400;
     }
 
     /* BANNER */
