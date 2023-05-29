@@ -724,9 +724,7 @@ small{
 
 
 /* MODALS */
-#confidentiality,
-#terms,
-#legal-notice{
+.modal{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -791,17 +789,50 @@ small{
     text-align: center;
 }
 
-#confidentiality.poppedUp,
-#terms.poppedUp,
-#legal-notice.poppedUp{
+.modal.poppedUp{
     display: block;
 
 }
-#confidentiality .modal-content.displayed,
-#terms .modal-content.displayed,
-#legal-notice .modal-content.displayed{
+.modal-content.displayed{
     transform: translateY(0);
     opacity: 1;
+}
+
+
+/* LANGUAGES */
+.en, .br{
+    display: none;
+}
+
+#language-modal .modal-content{
+    width: 300px;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#language-modal h3{
+    margin-bottom: 50px;
+}
+
+#language-modal li{
+    height:50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+#language-modal li:hover{
+    background: var(--highlight-light);
+}
+
+#language-modal ul{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.flag{
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 @media screen and (max-width:1200px){

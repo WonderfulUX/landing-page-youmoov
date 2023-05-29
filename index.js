@@ -17,6 +17,37 @@ mobileMenuLink.forEach(ele=>{
 
 //CHANGE LANGUAGE
 
+function changeLanguage(){
+    document.getElementById('language-modal').classList.add('poppedUp');
+    setTimeout(()=>{
+        document.getElementById('language-modal').querySelector('.modal-content').classList.add('displayed');
+    },300)
+}
+function switchTo(ele){
+    console.log(ele)
+    let languageShort = ele.querySelector('.language-label').innerText;
+    switch (languageShort){
+        case 'Français':
+            document.querySelector('.fr').style.display = 'block';
+            document.querySelector('.en').style.display = 'none';
+            document.querySelector('.br').style.display = 'none';
+            break;
+        case 'English':
+            document.querySelector('.fr').style.display = 'none';
+            document.querySelector('.en').style.display = 'block';
+            document.querySelector('.br').style.display = 'none';
+            break;
+        case 'Português':
+            document.querySelector('.fr').style.display = 'none';
+            document.querySelector('.en').style.display = 'none';
+            document.querySelector('.br').style.display = 'block';
+            break;
+    }
+    document.querySelector('#language-modal .close').click();
+}
+
+
+
 //MODALS
 function openConfidentiality(){
     document.getElementById('confidentiality').classList.add('poppedUp');
