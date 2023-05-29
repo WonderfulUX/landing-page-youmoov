@@ -599,14 +599,16 @@ h4{
 
 input{
     height: 50px;
+    width: 100%;
 }
 input, textarea{
     background: none;
     border: 1px solid var(--black-grey);
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 10px;
     caret-color: var(--highlight-color);
+    font-family: 'Fredoka', sans-serif;
 }
 textarea{
     width: 100%;
@@ -621,10 +623,11 @@ textarea{
 .input-row{
     display: flex;
     column-gap: 10px;
+    width: 100%;
 }
 .input-box{
     position: relative;
-    width: fit-content;
+    width: 100%;
 }
 .input-box.message{
     width: 100%;
@@ -735,20 +738,37 @@ small{
     z-index: 150;
 }
 
-#confidentiality .modal-content,
-#terms .modal-content,
-#legal-notice .modal-content{
+.modal-content{
     position: unset;
     background: white;
     color: var(--textcolor);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 50px;
     height: 100%;
-    overflow: auto;
     transform: translateY(-200px);
     opacity: 0;
-    transition: all 0.3s ease-in;
+    transition: all 0.25s ease-in;    
 }
+
+.modal-content-container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content-container::-webkit-scrollbar{
+    width: 10px;
+}
+.modal-content-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+   
+.modal-content-container::-webkit-scrollbar-thumb {
+    background: var(--highlight-color);
+    border-radius: 10px;
+}
+
 
 .close{
     position: absolute;
@@ -916,6 +936,9 @@ small{
     .footer-links{
         margin: 0 16vw 0 0;
     }
+    .footer-link{
+        height: 40px;
+    }
 
 }
 
@@ -1058,6 +1081,11 @@ small{
     /* TRANSACTIONS */
     .transactions-headline{
         margin-bottom: 50px;
+    }
+
+    /* MODALS */
+    .modal-content-container::-webkit-scrollbar{
+        display: none;
     }
 }
 @media screen and (max-width:500px){

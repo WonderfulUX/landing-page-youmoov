@@ -44,13 +44,13 @@ closeBtns.forEach((ele)=>{
             ele.target.parentElement.parentElement.querySelector('.modal-content').classList.remove('displayed');
             setTimeout(()=>{
                 ele.target.parentElement.parentElement.classList.remove('poppedUp');
-            },300)
+            },450)
         }
         else{
             ele.target.parentElement.querySelector('.modal-content').classList.remove('displayed');
             setTimeout(()=>{
                 ele.target.parentElement.classList.remove('poppedUp');
-            },400)
+            },450)
         }
     })
 })
