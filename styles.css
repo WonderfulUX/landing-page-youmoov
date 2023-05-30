@@ -463,6 +463,12 @@ h4{
 .perks-headline.en::after{
     content: 'you can';
 }
+.perks-headline.pt::before{
+    content: 'Com';
+}
+.perks-headline.pt::after{
+    content: 'você pode';
+}
 
 .perk{
     display: flex;
