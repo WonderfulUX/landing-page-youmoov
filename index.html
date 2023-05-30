@@ -30,11 +30,16 @@
                 <li class="menu-link fr"><a href="#onboarding">Comment ça marche</a></li>
                 <li class="menu-link fr"><a href="#contact">Contact</a></li>
                 <!-- EN -->
-                <li id="menu-title"><img loading="lazy" src="./assets/logo/youmoov_green_short.svg" alt=""></li>
                 <li class="menu-link en dn"><a href="#boost">Start earning</a></li>
                 <li class="menu-link en dn"><a href="#nextride">Plan your next ride</a></li>
                 <li class="menu-link en dn"><a href="#onboarding">How it works</a></li>
                 <li class="menu-link en dn"><a href="#contact">Contact</a></li>
+                <!-- PT -->
+                <li class="menu-link pt dn"><a href="#boost">Aumente sua renda</a></li>
+                <li class="menu-link pt dn"><a href="#nextride">Sua próxima carona</a></li>
+                <li class="menu-link pt dn"><a href="#onboarding">Como funciona</a></li>
+                <li class="menu-link pt dn"><a href="#contact">Contato</a></li>
+                <!--  -->
             </ul>
             <button id="language" onclick="changeLanguage()">
                 <!-- FR -->
@@ -43,6 +48,9 @@
                 <!-- EN -->
                 <img loading="lazy" class="en dn" src="./assets/svg/eng.svg" alt="Page in English">
                 <span id="language-txt" class="en dn">en</span>
+                <!-- PT -->
+                <img loading="lazy" class="pt dn" src="./assets/svg/bra.svg" alt="página em português">
+                <span id="language-txt" class="pt dn">PT</span>
                 <!--  -->
             </button>
             <button id="mobile-menu-button" onclick="togglemenu()">
@@ -58,17 +66,23 @@
             <div class="banner-content">
                 <div class="top">
                     <img loading="lazy" src="./assets/logo/youmoov_white.svg" alt="" id="banner-logo">
-                    <!-- FR -->
-                    <h1 class="fr">Expérimentez le covoiturage comme jamais auparavant !</h1>
-                    <!-- EN -->
-                    <h1 class="en dn">Experience car pooling like never before!</h1>
-                    <!--  -->
+                    <h1>
+                        <!-- FR -->
+                        <span class="fr">Expérimentez le covoiturage comme jamais auparavant !</span>
+                        <!-- EN -->
+                        <span class="en dn">Expérimentez le covoiturage comme jamais auparavant !</span>
+                        <!-- PT -->
+                       <span class="pt dn">Experimente a carona como nunca antes!</span>
+                       <!--  -->
+                    </h1>
                 </div>
                 <div class="bottom">
                     <!-- FR -->                    
                     <p class="download-message fr">Téléchargez sur votre mobile</p>
                     <!-- EN -->
                     <p class="download-message en dn">Download on your mobile</p>
+                    <!-- PT -->
+                    <p class="download-message pt dn">Baixe no seu celular</p>
                     <!--  -->
                     <div class="download-links-container">
                         <a href="" class="download">
@@ -91,7 +105,11 @@
                 <p class="subline fr">Ne voyagez plus jamais seul.e</p>
                 <!-- EN -->
                 <h2 class="en dn">Make your next ride fun</h2>
-                <p class="subline en dn">You don’t need to travel alone anymore</p>
+                <p class="subline en dn">You don't need to travel alone anymore</p>
+                <!--  -->
+                <!-- PT -->
+                <h2 class="pt dn">Você não precisa mais viajar sozinho</h2>
+                <p class="subline pt dn"></p>
                 <!--  -->
                 <div class="user-description" id="boost">
                     <div class="left-block fr">
@@ -138,7 +156,7 @@
                     </div>
                     <!-- EN -->
                     <div class="left-block en dn">
-                        <h3 class="title">You are driver</h3>
+                        <h3 class="title">You're a driver</h3>
                         <div class="description-block">
                             <span class="step">1</span>
                             <div class="text">
@@ -177,6 +195,47 @@
                             </div>
                         </div>
                     </div>
+                    <!-- PT -->
+                    <div class="left-block pt dn">
+                        <h3 class="title">Você é um motorista</h3>
+                        <div class="description-block">
+                            <span class="step">1</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Publique seu passeio</h4>
+                                </div>
+                                <div class="description">Especificamos : <br><br>
+                                    <ul class="dots">
+                                        <li>seu destino e as paradas que você fará.</li>
+                                        <li>o número de passageiros e o preço por assento.</li>
+                                        <li>sua hora e data de partida para tornar seu passeio visível.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-block">
+                            <span class="step">2</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Aguarde pedidos de carona</h4>
+                                </div>
+                                <div class="description">Você receberá solicitações de passageiros que desejam viajar com você.<br><br>
+                                    Selecione apenas a solicitação necessária para sua viagem e veja seus ganhos esperados.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-block">
+                            <span class="step">3</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Comece a ganhar dinheiro</h4>
+                                </div>
+                                <div class="description">Está na hora !<br><br>
+                                    Você está pronto para ir e pegar seus passageiros. Certifique-se de aproveitar o passeio enquanto saca.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--  -->
                     <div class="right-block">
                         <img loading="lazy" src="./assets/img/destination-driver.jpg" alt="Interface Youmoov de destination du conducteur" class="presentation-images left">
@@ -184,14 +243,22 @@
                         <img loading="lazy" src="./assets/img/start-ride.jpg" alt="Interface Youmoov de démarrage du covoiturage" class="presentation-images right">
                     </div>
                     <div class="signup-btn-container">
+                        <!-- FR -->
                         <button class="signup fr">
                             <img loading="lazy" src="./assets/svg/driver-icon.svg" alt="" class="btn-icon">
                             Créer un compte <strong>conducteur</strong>
                         </button>
+                        <!-- EN -->
                         <button class="signup en dn">
                             <img loading="lazy" src="./assets/svg/driver-icon.svg" alt="" class="btn-icon">
                             Sign up as a <strong>driver</strong>
                         </button>
+                        <!-- PT -->
+                        <button class="signup pt dn">
+                            <img loading="lazy" src="./assets/svg/driver-icon.svg" alt="" class="btn-icon">
+                            Inscreva-se como <strong>motorista</strong>
+                        </button>
+                        <!--  -->
                     </div>
                 </div>
                 <div class="user-description reverse" id="nextride">
@@ -268,6 +335,41 @@
                             </div>
                         </div>
                     </div>
+                    <!-- PT -->
+                    <div class="left-block pt dn">
+                        <h3 class="title">Procurando uma carona</h3>
+                        <div class="description-block">
+                            <span class="step">1</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Verifique as viagens para o seu destino</h4>
+                                </div>
+                                <div class="description">Pesquise o lugar que você precisa ir e verifique os passeios disponíveis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-block">
+                            <span class="step">2</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Envie suas solicitações de assento</h4>
+                                </div>
+                                <div class="description">Você precisa de um passeio seguro com motoristas profissionais com ótimas tarifas?<br>
+                                    Antes de enviar sua solicitação, você pode filtrar as viagens de acordo com sua conveniência para que você tenha a melhor experiência YOUMOOV.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-block">
+                            <span class="step">3</span>
+                            <div class="text">
+                                <div class="h4container">
+                                    <h4>Acompanhe sua viagem em tempo real</h4>
+                                </div>
+                                <div class="description">Você recebeu sua confirmação, está no dia da viagem, pode rastrear facilmente sua viagem e se comunicar com o motorista se algo acontecer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--  -->
                     <div class="right-block">
                         <img loading="lazy" src="./assets/img/destination-passenger.jpg" alt="Interface Youmoov de la destination du passager" class="presentation-images left">
@@ -275,49 +377,72 @@
                         <img loading="lazy" src="./assets/img/messages.jpg" alt="Interface de messagerie Youmoov" class="presentation-images right">
                     </div>
                     <div class="signup-btn-container">
+                        <!-- FR -->
                         <button class="signup fr">
                             <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
                             Créer un compte <strong>passager</strong>
                         </button>
+                        <!-- FR -->
                         <button class="signup en dn">
                             <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
                             Sign up as a <strong>passenger</strong>
                         </button>
+                        <!-- PT -->
+                        <button class="signup pt dn">
+                            <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
+                            Inscreva-se como <strong>passageiro</strong>
+                        </button>
+                        <!--  -->
                     </div>
                 </div>
             </div>
         </section>
         <section id="perks">
             <div class="container">
-                <!-- FR -->
                 <div class="perks-headline fr">
                     <img loading="lazy" class="youmoovcan" src="./assets/logo/youmoov_green_shadow.svg" alt="Avec Youmoov">
                 </div> 
-                <!-- EN -->
-                <div class="perks-headline en dn">
-                    <img loading="lazy" class="youmoovcan" src="./assets/logo/youmoov_green_shadow.svg" alt="With Youmoov">
-                </div> 
-                <!--  -->
                 <div class="perks-content">
                     <div class="perk">
                         <img loading="lazy" src="./assets/svg/environment.svg" alt="Avec youmoov, ayez un impact sur l'environnement en privilégiant le covoiturage">
+                        <!-- FR -->
                         <p class="fr">Avoir un impact sur l'environnement en privilégiant le covoiturage</p>
+                        <!-- FR -->
                         <p class="en dn">Have an environmental impact sharing rides</p>
+                        <!-- PT -->
+                        <p class="pt dn">Tenha um impacto ambiental compartilhando passeios</p>
+                        <!--  -->
                     </div>
                     <div class="perk">
                         <img loading="lazy" src="./assets/svg/friends.svg" alt="Avec youmoov, faites de nouvelles rencontres et partagez des moments humains">
+                        <!-- FR -->
                         <p class="fr">Faire de nouvelles rencontres et partagez des moments humains</p>
+                        <!-- EN -->
                         <p class="en dn">Build connexions with people around the country</p>
+                        <!-- PT -->
+                        <p class="pt dn">Conheça novas pessoas e compartilhe momentos humanos
+                        </p>
+                        <!--  -->
                     </div>
                     <div class="perk">
                         <img loading="lazy" src="./assets/svg/card.svg" alt="Avec youmoov, augmentez vos revenus chaque semaine en faisant de nouvelles connexions">
+                        <!-- FR -->
                         <p class="fr">Augmenter vos revenus chaque semaine en faisant de nouvelles connexions</p>
+                        <!-- EN -->
                         <p class="en dn">Get payed weekly, having fun and making friends</p>
+                        <!-- PT -->
+                        <p class="pt dn">Receba semanalmente, se divertindo e fazendo amigos</p>
+                        <!--  -->
                     </div>
                 </div>
                 <div class="download-links">
+                    <!-- FR -->
                     <p class="download-message fr">Téléchargez maintenant</p>
+                    <!-- FR -->
                     <p class="download-message en dn">Download now</p>
+                    <!-- PT -->
+                    <p class="download-message pt dn">Baixe Agora</p>
+                    <!--  -->
                     <div class="download-links-container">
                         <a href="" class="download">
                             <img loading="lazy" src="./assets/img/app-store-download.png" alt="">
@@ -338,37 +463,55 @@
                 <h3 class="fr">Vous souhaiter trouver un covoiturage ?</h3>
                 <!-- EN -->
                 <h2 class="en dn">Fast and easy onboarding process</h2>
-                <h3 class="en dn">You’re a traveler ?</h3>
+                <h3 class="en dn">You're a traveler ?</h3>
+                <!-- PT -->
+                <h2 class="pt dn">Processo de integração rápido e fácil</h2>
+                <h3 class="pt dn">Você quer encontrar uma carona?</h3>
                 <!--  -->
                 <div class="onboading-process">
                     <!-- FR -->
                     <h4 class="fr">Complétez ces 2 étapes et planifiez votre prochain covoiturage.</h4>
                     <!-- EN -->
                     <h4 class="en dn">Complete those 2 steps and start planning your next ride.</h4>
+                    <!-- EN -->
+                    <h4 class="pt dn">Conclua essas 2 etapas e comece a planejar sua próxima viagem.</h4>
                     <!--  -->
                     <div>
                         <img loading="lazy" class="onboarding-screen" src="./assets/img/passenger-basic-info.jpg" alt="Interface Youmoov pour les infos d'un passager">
                         <img loading="lazy" class="onboarding-screen" src="./assets/img/passenger-picture.jpg" alt="Interface Youmoov pour le téléchargement de la phot de profil passager">
                     </div>
+                    <!-- FR -->
                     <button class="signup fr">
                         <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
                         Créer un compte <strong>passager</strong>
                     </button>
+                    <!-- EN -->
                     <button class="signup en dn">
                         <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
                         Sign up as a <strong>passenger</strong>
                     </button>
+                    <!-- PT -->
+                    <button class="signup pt dn">
+                        <img loading="lazy" src="./assets/svg/passenger-icon.svg" alt="" class="btn-icon">
+                        Inscreva-se como <strong>passageiro</strong>
+                    </button>
+                    <!--  -->
                 </div>
                 <!-- FR -->
                 <h3 class="fr">Vous êtes chauffeur ?</h3>
                 <!-- EN -->
                 <h3 class="en dn">You're a driver</h3>
+                <!-- PT -->
+                <h3 class="pt dn">Você é um motorista</h3>
                 <!-- -->
                 <div class="onboading-process">
                     <!-- FR -->
                     <h4 class="fr">Saisissez votre adresse, les informations de votre véhicule et une copie de votre permis, nous validons votre profil sous 24h.</h4>
                     <!-- EN -->
-                    <h4 class="en dn">Provide us with your address, car details and your licenses, we’ll get back to you within 24 hours.</h4>
+                    <h4 class="en dn">Provide us with your address, car details and your licenses, we'll get back to you within 24 hours.</h4>
+                    <!-- PT -->
+                    <h4 class="pt dn">Forneça-nos seu endereço, detalhes do carro e suas licenças, entraremos em contato em 24 horas.
+                    </h4>
                     <!-- -->
                     <div>
                         <img loading="lazy" class="onboarding-screen" src="./assets/img/driver-basic-info.jpg" alt="Interface Youmoov de saisie des informations du conducteur">
@@ -386,6 +529,11 @@
                         <img loading="lazy" src="./assets/svg/driver-icon.svg" alt="" class="btn-icon">
                         Sign up as a <strong>driver</strong>
                     </button>
+                    <!-- PT -->
+                    <button class="signup pt dn">
+                        <img loading="lazy" src="./assets/svg/driver-icon.svg" alt="" class="btn-icon">
+                        Inscreva-se como <strong>motorista</strong>
+                    </button>
                     <!-- -->
                 </div>
             </div>
@@ -399,6 +547,8 @@
                         <span class="fr">s'assure de la sécurité de vos transactions</span>
                         <!-- EN -->
                         <span class="en dn">has your transactions secured</span>
+                        <!-- EN -->
+                        <span class="en dn">tem suas transações protegidas</span>
                         <!-- -->
                     </div>
                     <div class="transactions-methods">
@@ -429,56 +579,86 @@
                             de pouvoir vous aider.
                         </p>
                     </div>
-                    <!-- FR -->
+                    <!-- EN -->
                     <div class="contact-text en dn">
                         <h2>Contact us</h2>
                         <p>You did get here without subscribing ? <br>
                             Feel fee to reach out to us anytime via this form if you have any queries or concerns, we'll be very happy to hear from you.
                         </p>
                     </div>
+                    <!-- PT -->
+                    <div class="contact-text pt dn">
+                        <h2>Contate-nos</h2>
+                        <p>Você chegou aqui sem se inscrever?<br>
+                            Sinta-se à vontade para entrar em contato conosco a qualquer momento por meio deste formulário se tiver alguma dúvida ou preocupação. Ficaremos muito felizes em ouvi-lo.
+                        </p>
+                    </div>
                     <!--  -->
-                    <form action="" class="contact-form">
+                    <form action="" id="contact-form" method="post">
                         <div class="input-row">
                             <div class="input-box">
                                 <!-- FR -->
                                 <label class="fr" for="fname">Prénom</label>
                                 <!-- EN -->
                                 <label class="en dn" for="fname">First name</label>
+                                <!-- PT -->
+                                <label class="pt dn" for="fname">Primeiro nome</label>
                                 <!-- -->
-                                <input type="text" class="fname" id="fname">
+                                <input type="text" class="fname" id="fname" pattern="[a-zA-Z]+">
                             </div>
                             <div class="input-box">
                                 <!-- FR -->
                                 <label class="fr" for="lname">Nom</label>
                                 <!-- EN -->
                                 <label class="en dn" for="lname">Last name</label>
+                                <!-- PT -->
+                                <label class="pt dn" for="lname">Nome</label>
                                 <!-- -->
-                                <input type="text" class="lname" id="lname">
+                                <input type="text" class="lname" id="lname" pattern="[a-zA-Z]+">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-box">
                                 <label for="email">Email</label>
-                                <input type="text" class="email" id="email">
+                                <input type="email" class="email" id="email">
                             </div>
                             <div class="input-box">
                                 <!-- FR -->
                                 <label class="fr" for="phone">Numéro de téléphone</label>
                                 <!-- EN -->
                                 <label class="en dn" for="phone">Phone number</label>
+                                <!-- PT -->
+                                <label class="pt dn" for="phone">Número de telefone</label>
                                 <!-- -->
-                                <input type="text" class="phone" id="phone">
+                                <input type="tel" class="phone" id="phone" pattern="[0-9]+">
                             </div>
                         </div>
                         <div class="input-box message">
-                            <label for="message">Message</label>
+                            <!-- FR -->
+                            <label class="fr" for="message">Message</label>
+                            <!-- PT -->
+                            <label class="en dn" for="message">Message</label>
+                            <!-- PT -->
+                            <label class="pt dn" for="message">Mensagem</label>
+                            <!--  -->
                             <textarea name="message" id="message" rows="8"></textarea>
                         </div>
+                        <p class="errorMessage dn">
+                            <!-- FR -->
+                            <span class="fr">Tous les champs sont obligatoires !</span> 
+                            <!-- EN -->
+                            <span class="en dn">All fields are required !</span>
+                            <!-- PT -->
+                            <span class="pt dn">Todos os campos são necessários !</span>
+                            <!--  -->
+                        </p>    
                         <button type="submit">
                             <!-- FR -->
                             <span class="fr">Envoyer</span>
                             <!-- EN -->
-                            <span class="en dn">Submit</span>
+                            <span class="en dn">Send</span>
+                            <!-- PT -->
+                            <span class="pt dn">Enviar</span>
                             <!--  -->
                         </button>
                     </form>
@@ -499,6 +679,10 @@
                 <p class="en dn">Since 2012, Youmoov is the most popular car pooling platform in French Guyana. <br>
                     This new way of travaling is expanding and allow us to get payed to lessen our carbon print. No to mention the social impact it may have.
                 </p>
+                <!-- PT -->
+                <p class="pt dn">Desde 2012, Youmoov é a plataforma de car pooling mais popular na Guiana Francesa.<br>
+                    Essa nova maneira de trabalhar está se expandindo e nos permite ser pagos para diminuir nossa impressão de carbono. Sem falar no impacto social que pode ter.
+                </p>
                 <!--  -->
             </div>
             <div class="footer-right">
@@ -509,8 +693,10 @@
                             <a href="#contact">
                                 <!-- FR -->
                                 <span class="fr">Rejoignez-nous</span>
-                                <!-- FR -->
+                                <!-- EN -->
                                 <span class="en dn">Join the team</span>
+                                <!-- PT -->
+                                <span class="pt dn">Junte-se à equipe</span>
                                 <!--  -->
                             </a>
                         </li>
@@ -551,6 +737,15 @@
                         <li class="footer-link" onclick="openLegalNotice()">Legal Notice</li>
                     </ul>
                 </div>
+                <!-- PT -->
+                <div class="footer-links pt dn">
+                    <h2>Vida privada</h2>
+                    <ul>
+                        <li class="footer-link" onclick="openConfidentiality()">Política de Privacidade</li>
+                        <li class="footer-link" onclick="openTerms()">Termos e Condições</li>
+                        <li class="footer-link" onclick="openLegalNotice()">Notícia legal</li>
+                    </ul>
+                </div>
                 <!--  -->
             </div>
         </div>
@@ -559,6 +754,8 @@
             <span class="fr">Tous droits réservés.</span> 
             <!-- EN -->
             <span class="en dn">All rights reserved.</span> 
+            <!-- PT -->
+            <span class="pt dn">Todos os direitos reservados.</span> 
             <!--  -->
         </small>
     </footer>
@@ -572,6 +769,8 @@
                 <h3 class="fr">Politique de confidentialité</h3>
                 <!-- EN -->
                 <h3 class="en dn">Privacy policy</h3>
+                <!-- EN -->
+                <h3 class="pt dn">Política de Privacidade</h3>
                 <!--  -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores, minus repudiandae culpa eos saepe, eum dolore nesciunt et repellendus cupiditate velit cumque molestias praesentium veritatis? At omnis voluptas voluptates, neque perspiciatis fugit possimus totam eaque, iusto nulla molestias deleniti sapiente esse adipisci quis exercitationem iure! Expedita rem soluta laboriosam a provident repellat illo sequi inventore magnam alias optio ut, reprehenderit vel numquam obcaecati eligendi? Quidem nemo velit ea quo dolorem quam cumque repellendus, culpa aliquam voluptas dolores harum voluptate vitae placeat optio magni non commodi? Consequatur asperiores et quibusdam non ad optio possimus dolore. Ad doloribus deleniti quo quisquam modi, repellat voluptate consequuntur debitis enim ratione aspernatur nobis natus nam minus explicabo voluptatem praesentium nisi fuga? Recusandae voluptate voluptatibus itaque nam veniam exercitationem molestiae ut at animi optio doloremque reprehenderit fuga, quaerat neque labore hic modi libero inventore eaque, quibusdam, qui dignissimos unde? Reiciendis amet commodi, quam voluptates neque dolorem veniam dicta similique consectetur maxime maiores asperiores sint? Itaque animi quaerat aperiam illum, quisquam, nisi cupiditate iste nemo tenetur veniam sequi illo soluta error, odit eum ducimus! Optio ad labore blanditiis consequuntur recusandae saepe! Omnis esse, nesciunt perferendis temporibus exercitationem recusandae praesentium corporis aperiam. Quos, quasi voluptatum omnis dignissimos nulla ducimus est veniam eligendi recusandae! Quibusdam perferendis, doloribus aperiam pariatur praesentium voluptates ad quo quam amet cum et optio, voluptatibus quasi molestiae facere veritatis autem explicabo facilis impedit est. Et quidem modi possimus nulla corrupti impedit delectus dicta dolorem, nemo consectetur sequi iste eveniet veniam repudiandae voluptatibus molestias blanditiis exercitationem sit corporis, earum maiores fuga! Sint repudiandae dolore doloremque eos quae cumque nemo iure cum repellendus ipsa maxime inventore sapiente, rem, vitae incidunt, pariatur at vel nam expedita molestiae praesentium veritatis dolorem. Temporibus consectetur eaque perspiciatis cum excepturi veritatis quam libero ullam maiores explicabo at et, reprehenderit, ea laudantium saepe dolor rerum ducimus totam. Suscipit neque vitae aut similique vel quis quam veritatis. Vel, libero! Quaerat perspiciatis amet unde quas reiciendis consectetur id quidem explicabo autem repellat. Nesciunt esse reprehenderit adipisci quas ut mollitia inventore nostrum molestiae aut ullam, modi ad natus ab, soluta animi id aliquid? Vel incidunt reiciendis dolorum, voluptate ipsam tenetur libero quibusdam nesciunt sequi. Nulla, qui laudantium praesentium quos exercitationem reprehenderit nobis fugiat ipsam odio, provident quo modi tenetur velit ducimus accusantium? Eum saepe in sunt magni quidem incidunt vel sed quis deleniti? Corporis laborum quo odit quos excepturi, reprehenderit, incidunt, voluptate inventore veniam delectus provident iure voluptatem est harum nesciunt suscipit culpa cumque. Placeat temporibus neque, aut beatae est pariatur, officiis ullam commodi earum eligendi iure. Voluptates, in? Suscipit distinctio excepturi corporis quia rerum ipsam placeat magni similique itaque nisi debitis eos perspiciatis aliquid nostrum dignissimos, temporibus dolore accusamus adipisci eius beatae corrupti. Alias distinctio sunt sit vitae non accusamus velit doloribus nobis, obcaecati dolorum, aliquam quas quam. Dignissimos magnam et distinctio in rerum numquam nam illum atque hic sequi asperiores blanditiis dolor a nisi placeat quis minima, illo voluptate perspiciatis recusandae debitis voluptatibus ipsa! Beatae aliquam distinctio, totam dignissimos, tenetur sapiente pariatur, perspiciatis saepe est vel minima quis praesentium ullam ab perferendis officiis dolorum similique iste dolores deleniti reiciendis minus velit! Odit aliquam dolorem commodi maxime ipsa tempora cupiditate asperiores dolores soluta, suscipit eveniet voluptatibus obcaecati molestiae repudiandae. Quod aspernatur quis, consequatur necessitatibus enim similique, eaque esse ullam assumenda quasi possimus laboriosam consectetur autem. Incidunt praesentium facilis inventore tempora ipsam, optio odit quibusdam minima nesciunt magni, placeat odio ullam iste architecto dignissimos aliquid. Natus fugit est velit, ipsam eaque quisquam magni quaerat ex modi voluptatum labore, impedit explicabo dicta qui, libero obcaecati nemo! Hic ipsa, corrupti ipsum, a minus earum mollitia expedita consectetur nulla voluptatibus harum perferendis. Rerum est mollitia culpa a cumque maiores, quos provident similique sint, sunt qui cum ipsa assumenda debitis aliquid. Magnam est tempore quia quam ut ipsa corrupti rerum fugit recusandae quibusdam maiores reprehenderit quod, culpa quae vel animi voluptas explicabo. Quaerat natus, possimus officia, esse consectetur consequatur et recusandae, animi voluptatum ab repudiandae iusto voluptatibus? Iste maiores nesciunt, vitae nobis harum ipsum a provident ad sunt laudantium. Nam similique ut sit quam dolores dolorem ipsam amet voluptas nobis doloribus exercitationem facilis assumenda iusto optio, eligendi odio vel eum asperiores perferendis officiis nesciunt. Explicabo modi laboriosam nostrum debitis aliquam? Distinctio qui exercitationem, saepe facilis vel mollitia praesentium corporis doloribus libero architecto tempora cupiditate. Modi, repudiandae ad vero, praesentium eveniet nostrum ipsam aut quibusdam distinctio facilis vel non magnam magni doloribus reprehenderit sint asperiores sapiente quaerat delectus reiciendis! Mollitia ipsam autem repudiandae laborum ducimus voluptatibus quo fuga, natus non nemo laboriosam eaque! In ex aspernatur est nemo velit dignissimos quibusdam debitis sint quasi amet sunt tempore fugit laudantium ad, voluptas commodi. Deserunt ea cupiditate, modi, temporibus sequi mollitia quia veniam exercitationem aperiam voluptatem quaerat quisquam atque ducimus voluptate pariatur tempore itaque dolorem. Atque debitis tenetur iure ullam ex amet.</p>
             </div>
@@ -587,6 +786,8 @@
                 <h3 class="fr">Conditions Générales de Ventes</h3>
                 <!-- EN -->
                 <h3 class="en dn">Terms and conditions</h3>
+                <!-- PT -->
+                <h3 class="pt dn">Termos e Condições</h3>
                 <!--  -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores, minus repudiandae culpa eos saepe, eum dolore nesciunt et repellendus cupiditate velit cumque molestias praesentium veritatis? At omnis voluptas voluptates, neque perspiciatis fugit possimus totam eaque, iusto nulla molestias deleniti sapiente esse adipisci quis exercitationem iure! Expedita rem soluta laboriosam a provident repellat illo sequi inventore magnam alias optio ut, reprehenderit vel numquam obcaecati eligendi? Quidem nemo velit ea quo dolorem quam cumque repellendus, culpa aliquam voluptas dolores harum voluptate vitae placeat optio magni non commodi? Consequatur asperiores et quibusdam non ad optio possimus dolore. Ad doloribus deleniti quo quisquam modi, repellat voluptate consequuntur debitis enim ratione aspernatur nobis natus nam minus explicabo voluptatem praesentium nisi fuga? Recusandae voluptate voluptatibus itaque nam veniam exercitationem molestiae ut at animi optio doloremque reprehenderit fuga, quaerat neque labore hic modi libero inventore eaque, quibusdam, qui dignissimos unde? Reiciendis amet commodi, quam voluptates neque dolorem veniam dicta similique consectetur maxime maiores asperiores sint? Itaque animi quaerat aperiam illum, quisquam, nisi cupiditate iste nemo tenetur veniam sequi illo soluta error, odit eum ducimus! Optio ad labore blanditiis consequuntur recusandae saepe! Omnis esse, nesciunt perferendis temporibus exercitationem recusandae praesentium corporis aperiam. Quos, quasi voluptatum omnis dignissimos nulla ducimus est veniam eligendi recusandae! Quibusdam perferendis, doloribus aperiam pariatur praesentium voluptates ad quo quam amet cum et optio, voluptatibus quasi molestiae facere veritatis autem explicabo facilis impedit est. Et quidem modi possimus nulla corrupti impedit delectus dicta dolorem, nemo consectetur sequi iste eveniet veniam repudiandae voluptatibus molestias blanditiis exercitationem sit corporis, earum maiores fuga! Sint repudiandae dolore doloremque eos quae cumque nemo iure cum repellendus ipsa maxime inventore sapiente, rem, vitae incidunt, pariatur at vel nam expedita molestiae praesentium veritatis dolorem. Temporibus consectetur eaque perspiciatis cum excepturi veritatis quam libero ullam maiores explicabo at et, reprehenderit, ea laudantium saepe dolor rerum ducimus totam. Suscipit neque vitae aut similique vel quis quam veritatis. Vel, libero! Quaerat perspiciatis amet unde quas reiciendis consectetur id quidem explicabo autem repellat. Nesciunt esse reprehenderit adipisci quas ut mollitia inventore nostrum molestiae aut ullam, modi ad natus ab, soluta animi id aliquid? Vel incidunt reiciendis dolorum, voluptate ipsam tenetur libero quibusdam nesciunt sequi. Nulla, qui laudantium praesentium quos exercitationem reprehenderit nobis fugiat ipsam odio, provident quo modi tenetur velit ducimus accusantium? Eum saepe in sunt magni quidem incidunt vel sed quis deleniti? Corporis laborum quo odit quos excepturi, reprehenderit, incidunt, voluptate inventore veniam delectus provident iure voluptatem est harum nesciunt suscipit culpa cumque. Placeat temporibus neque, aut beatae est pariatur, officiis ullam commodi earum eligendi iure. Voluptates, in? Suscipit distinctio excepturi corporis quia rerum ipsam placeat magni similique itaque nisi debitis eos perspiciatis aliquid nostrum dignissimos, temporibus dolore accusamus adipisci eius beatae corrupti. Alias distinctio sunt sit vitae non accusamus velit doloribus nobis, obcaecati dolorum, aliquam quas quam. Dignissimos magnam et distinctio in rerum numquam nam illum atque hic sequi asperiores blanditiis dolor a nisi placeat quis minima, illo voluptate perspiciatis recusandae debitis voluptatibus ipsa! Beatae aliquam distinctio, totam dignissimos, tenetur sapiente pariatur, perspiciatis saepe est vel minima quis praesentium ullam ab perferendis officiis dolorum similique iste dolores deleniti reiciendis minus velit! Odit aliquam dolorem commodi maxime ipsa tempora cupiditate asperiores dolores soluta, suscipit eveniet voluptatibus obcaecati molestiae repudiandae. Quod aspernatur quis, consequatur necessitatibus enim similique, eaque esse ullam assumenda quasi possimus laboriosam consectetur autem. Incidunt praesentium facilis inventore tempora ipsam, optio odit quibusdam minima nesciunt magni, placeat odio ullam iste architecto dignissimos aliquid. Natus fugit est velit, ipsam eaque quisquam magni quaerat ex modi voluptatum labore, impedit explicabo dicta qui, libero obcaecati nemo! Hic ipsa, corrupti ipsum, a minus earum mollitia expedita consectetur nulla voluptatibus harum perferendis. Rerum est mollitia culpa a cumque maiores, quos provident similique sint, sunt qui cum ipsa assumenda debitis aliquid. Magnam est tempore quia quam ut ipsa corrupti rerum fugit recusandae quibusdam maiores reprehenderit quod, culpa quae vel animi voluptas explicabo. Quaerat natus, possimus officia, esse consectetur consequatur et recusandae, animi voluptatum ab repudiandae iusto voluptatibus? Iste maiores nesciunt, vitae nobis harum ipsum a provident ad sunt laudantium. Nam similique ut sit quam dolores dolorem ipsam amet voluptas nobis doloribus exercitationem facilis assumenda iusto optio, eligendi odio vel eum asperiores perferendis officiis nesciunt. Explicabo modi laboriosam nostrum debitis aliquam? Distinctio qui exercitationem, saepe facilis vel mollitia praesentium corporis doloribus libero architecto tempora cupiditate. Modi, repudiandae ad vero, praesentium eveniet nostrum ipsam aut quibusdam distinctio facilis vel non magnam magni doloribus reprehenderit sint asperiores sapiente quaerat delectus reiciendis! Mollitia ipsam autem repudiandae laborum ducimus voluptatibus quo fuga, natus non nemo laboriosam eaque! In ex aspernatur est nemo velit dignissimos quibusdam debitis sint quasi amet sunt tempore fugit laudantium ad, voluptas commodi. Deserunt ea cupiditate, modi, temporibus sequi mollitia quia veniam exercitationem aperiam voluptatem quaerat quisquam atque ducimus voluptate pariatur tempore itaque dolorem. Atque debitis tenetur iure ullam ex amet.</p>
             </div>
@@ -602,6 +803,8 @@
                 <h3 class="fr">Mentions Légales</h3>
                 <!-- EN -->
                 <h3 class="en dn">Legal Notice</h3>
+                <!-- PT -->
+                <h3 class="pt dn">Notícia legal</h3>
                 <!--  -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores, minus repudiandae culpa eos saepe, eum dolore nesciunt et repellendus cupiditate velit cumque molestias praesentium veritatis? At omnis voluptas voluptates, neque perspiciatis fugit possimus totam eaque, iusto nulla molestias deleniti sapiente esse adipisci quis exercitationem iure! Expedita rem soluta laboriosam a provident repellat illo sequi inventore magnam alias optio ut, reprehenderit vel numquam obcaecati eligendi? Quidem nemo velit ea quo dolorem quam cumque repellendus, culpa aliquam voluptas dolores harum voluptate vitae placeat optio magni non commodi? Consequatur asperiores et quibusdam non ad optio possimus dolore. Ad doloribus deleniti quo quisquam modi, repellat voluptate consequuntur debitis enim ratione aspernatur nobis natus nam minus explicabo voluptatem praesentium nisi fuga? Recusandae voluptate voluptatibus itaque nam veniam exercitationem molestiae ut at animi optio doloremque reprehenderit fuga, quaerat neque labore hic modi libero inventore eaque, quibusdam, qui dignissimos unde? Reiciendis amet commodi, quam voluptates neque dolorem veniam dicta similique consectetur maxime maiores asperiores sint? Itaque animi quaerat aperiam illum, quisquam, nisi cupiditate iste nemo tenetur veniam sequi illo soluta error, odit eum ducimus! Optio ad labore blanditiis consequuntur recusandae saepe! Omnis esse, nesciunt perferendis temporibus exercitationem recusandae praesentium corporis aperiam. Quos, quasi voluptatum omnis dignissimos nulla ducimus est veniam eligendi recusandae! Quibusdam perferendis, doloribus aperiam pariatur praesentium voluptates ad quo quam amet cum et optio, voluptatibus quasi molestiae facere veritatis autem explicabo facilis impedit est. Et quidem modi possimus nulla corrupti impedit delectus dicta dolorem, nemo consectetur sequi iste eveniet veniam repudiandae voluptatibus molestias blanditiis exercitationem sit corporis, earum maiores fuga! Sint repudiandae dolore doloremque eos quae cumque nemo iure cum repellendus ipsa maxime inventore sapiente, rem, vitae incidunt, pariatur at vel nam expedita molestiae praesentium veritatis dolorem. Temporibus consectetur eaque perspiciatis cum excepturi veritatis quam libero ullam maiores explicabo at et, reprehenderit, ea laudantium saepe dolor rerum ducimus totam. Suscipit neque vitae aut similique vel quis quam veritatis. Vel, libero! Quaerat perspiciatis amet unde quas reiciendis consectetur id quidem explicabo autem repellat. Nesciunt esse reprehenderit adipisci quas ut mollitia inventore nostrum molestiae aut ullam, modi ad natus ab, soluta animi id aliquid? Vel incidunt reiciendis dolorum, voluptate ipsam tenetur libero quibusdam nesciunt sequi. Nulla, qui laudantium praesentium quos exercitationem reprehenderit nobis fugiat ipsam odio, provident quo modi tenetur velit ducimus accusantium? Eum saepe in sunt magni quidem incidunt vel sed quis deleniti? Corporis laborum quo odit quos excepturi, reprehenderit, incidunt, voluptate inventore veniam delectus provident iure voluptatem est harum nesciunt suscipit culpa cumque. Placeat temporibus neque, aut beatae est pariatur, officiis ullam commodi earum eligendi iure. Voluptates, in? Suscipit distinctio excepturi corporis quia rerum ipsam placeat magni similique itaque nisi debitis eos perspiciatis aliquid nostrum dignissimos, temporibus dolore accusamus adipisci eius beatae corrupti. Alias distinctio sunt sit vitae non accusamus velit doloribus nobis, obcaecati dolorum, aliquam quas quam. Dignissimos magnam et distinctio in rerum numquam nam illum atque hic sequi asperiores blanditiis dolor a nisi placeat quis minima, illo voluptate perspiciatis recusandae debitis voluptatibus ipsa! Beatae aliquam distinctio, totam dignissimos, tenetur sapiente pariatur, perspiciatis saepe est vel minima quis praesentium ullam ab perferendis officiis dolorum similique iste dolores deleniti reiciendis minus velit! Odit aliquam dolorem commodi maxime ipsa tempora cupiditate asperiores dolores soluta, suscipit eveniet voluptatibus obcaecati molestiae repudiandae. Quod aspernatur quis, consequatur necessitatibus enim similique, eaque esse ullam assumenda quasi possimus laboriosam consectetur autem. Incidunt praesentium facilis inventore tempora ipsam, optio odit quibusdam minima nesciunt magni, placeat odio ullam iste architecto dignissimos aliquid. Natus fugit est velit, ipsam eaque quisquam magni quaerat ex modi voluptatum labore, impedit explicabo dicta qui, libero obcaecati nemo! Hic ipsa, corrupti ipsum, a minus earum mollitia expedita consectetur nulla voluptatibus harum perferendis. Rerum est mollitia culpa a cumque maiores, quos provident similique sint, sunt qui cum ipsa assumenda debitis aliquid. Magnam est tempore quia quam ut ipsa corrupti rerum fugit recusandae quibusdam maiores reprehenderit quod, culpa quae vel animi voluptas explicabo. Quaerat natus, possimus officia, esse consectetur consequatur et recusandae, animi voluptatum ab repudiandae iusto voluptatibus? Iste maiores nesciunt, vitae nobis harum ipsum a provident ad sunt laudantium. Nam similique ut sit quam dolores dolorem ipsam amet voluptas nobis doloribus exercitationem facilis assumenda iusto optio, eligendi odio vel eum asperiores perferendis officiis nesciunt. Explicabo modi laboriosam nostrum debitis aliquam? Distinctio qui exercitationem, saepe facilis vel mollitia praesentium corporis doloribus libero architecto tempora cupiditate. Modi, repudiandae ad vero, praesentium eveniet nostrum ipsam aut quibusdam distinctio facilis vel non magnam magni doloribus reprehenderit sint asperiores sapiente quaerat delectus reiciendis! Mollitia ipsam autem repudiandae laborum ducimus voluptatibus quo fuga, natus non nemo laboriosam eaque! In ex aspernatur est nemo velit dignissimos quibusdam debitis sint quasi amet sunt tempore fugit laudantium ad, voluptas commodi. Deserunt ea cupiditate, modi, temporibus sequi mollitia quia veniam exercitationem aperiam voluptatem quaerat quisquam atque ducimus voluptate pariatur tempore itaque dolorem. Atque debitis tenetur iure ullam ex amet.</p>
             </div>
@@ -616,11 +819,13 @@
             <h3 class="fr">Langue</h3>
             <!-- EN -->
             <h3 class="en dn">Language</h3>
+            <!-- PT -->
+            <h3 class="pt dn">Linguagem</h3>
             <!--  -->
             <ul>
                 <li onclick="switchTo(this)"><img loading="lazy" class="flag" src="./assets/svg/fra.svg" alt=""><span class="language-label">Français</span></li>
                 <li onclick="switchTo(this)"><img loading="lazy" class="flag" src="./assets/svg/eng.svg" alt=""><span class="language-label">English</span></li>
-                <!-- <li onclick="switchTo(this)"><img loading="lazy" class="flag" src="./assets/svg/bra.svg" alt=""><span class="language-label">Português</span></li> -->
+                <li onclick="switchTo(this)"><img loading="lazy" class="flag" src="./assets/svg/bra.svg" alt=""><span class="language-label">Português</span></li>
             </ul>
         </div>
     </div>

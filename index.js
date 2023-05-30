@@ -2,6 +2,7 @@ let menu = document.getElementById('menu');
 let mobileMenuLink = document.querySelectorAll('.menu-link');
 let closeBtns = document.querySelectorAll('.close');
 let modals = document.querySelectorAll('.modal');
+let inputs = [... [... document.querySelectorAll('#contact-form input') ], document.querySelector('#contact-form textarea')];
 
 
 const bodyScrollToggle = ()=>{
@@ -38,17 +39,17 @@ function switchTo(ele){
         case 'Français':
             [... document.querySelectorAll('.fr')].map(ele=>ele.classList.remove('dn'));
             [... document.querySelectorAll('.en')].map(ele=>ele.classList.add('dn'));
-            // document.querySelector('.br').style.display = 'none';
+            [... document.querySelectorAll('.pt')].map(ele=>ele.classList.add('dn'));
             break;
         case 'English':
             [... document.querySelectorAll('.fr')].map(ele=>ele.classList.add('dn'));
             [... document.querySelectorAll('.en')].map(ele=>ele.classList.remove('dn'));
-            // document.querySelector('.br').style.display = 'none';
+            [... document.querySelectorAll('.pt')].map(ele=>ele.classList.add('dn'));
             break;
-        case 'Português':
-            document.querySelector('.fr').style.display = 'none';
-            document.querySelector('.en').style.display = 'none';
-            document.querySelector('.br').style.display = 'block';
+            case 'Português':
+            [... document.querySelectorAll('.fr')].map(ele=>ele.classList.add('dn'));
+            [... document.querySelectorAll('.en')].map(ele=>ele.classList.add('dn'));
+            [... document.querySelectorAll('.pt')].map(ele=>ele.classList.remove('dn'));
             break;
     }
     document.querySelector('#language-modal .close').click();
@@ -106,3 +107,26 @@ modals.forEach((ele)=>{
         }
     })
 })
+
+
+//FORM
+document.getElementById('contact-form').addEventListener('submit',(e)=>{
+    e.preventDefault();
+    checkInput();
+    console.log('Submit');
+});
+
+inputs.forEach(input =>{
+    input.addEventListener('focus',()=>{
+        document.querySelector('.errorMessage:not(.dn)') && document.querySelector('.errorMessage').classList.add('dn');
+    })
+})
+
+function checkInput(){
+    let fields = inputs.map(field => field.value);
+    console.log(fields)
+    if(fields.includes('')){
+        document.querySelector('.errorMessage').classList.remove('dn');
+    }
+   
+}
