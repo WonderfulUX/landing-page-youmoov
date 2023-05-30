@@ -73,6 +73,10 @@ body{
     padding-top: var(--headerheight);
 }
 
+.hide{
+    overflow: hidden;
+}
+
 /* HEADER */
 header{
     color: var(--highlight-color);
