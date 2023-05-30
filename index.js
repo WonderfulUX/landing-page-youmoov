@@ -36,14 +36,14 @@ function switchTo(ele){
     let languageShort = ele.querySelector('.language-label').innerText;
     switch (languageShort){
         case 'Français':
-            document.querySelector('.fr').style.display = 'block';
-            document.querySelector('.en').style.display = 'none';
-            document.querySelector('.br').style.display = 'none';
+            [... document.querySelectorAll('.fr')].map(ele=>ele.classList.remove('dn'));
+            [... document.querySelectorAll('.en')].map(ele=>ele.classList.add('dn'));
+            // document.querySelector('.br').style.display = 'none';
             break;
         case 'English':
-            document.querySelector('.fr').style.display = 'none';
-            document.querySelector('.en').style.display = 'block';
-            document.querySelector('.br').style.display = 'none';
+            [... document.querySelectorAll('.fr')].map(ele=>ele.classList.add('dn'));
+            [... document.querySelectorAll('.en')].map(ele=>ele.classList.remove('dn'));
+            // document.querySelector('.br').style.display = 'none';
             break;
         case 'Português':
             document.querySelector('.fr').style.display = 'none';

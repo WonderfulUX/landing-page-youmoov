@@ -199,6 +199,10 @@ section{
     padding: 0;
 }
 
+.banner .container{
+    height: 100%;
+}
+
 .banner-content{
     display: flex;
     flex-direction: column;
@@ -208,6 +212,7 @@ section{
     z-index: 5;
     position: relative;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 #banner-logo{
@@ -217,9 +222,8 @@ section{
 h1{
     color: white;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     width: 400px;
-    margin-bottom: 150px;
 }
 
 .download-message{
@@ -315,11 +319,13 @@ h2{
 
 .left-block{
     width: 350px;
+    margin-bottom: 30px;
 }
 
 .description-block{
     display: flex;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .step{
@@ -450,6 +456,12 @@ h4{
     content: 'vous pouvez';
     right: 0;
     transform: translate(100%, -75%);
+}
+.perks-headline.en::before{
+    content: 'With';
+}
+.perks-headline.en::after{
+    content: 'you can';
 }
 
 .perk{
@@ -804,10 +816,6 @@ small{
 
 
 /* LANGUAGES */
-.en, .br{
-    display: none;
-}
-
 #language-modal .modal-content{
     width: 300px;
     height: fit-content;
@@ -915,6 +923,10 @@ small{
         height: 250px;
     }
 
+    h1{
+        font-size: 24px;
+    }
+
     /* PRESENTATION */
     .user-description,
     .user-description.reverse{
@@ -925,7 +937,7 @@ small{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 auto 30px;
     }
 
     .right-block{
@@ -1007,11 +1019,15 @@ small{
         height: auto;
     }
     h1{
-        margin-bottom: 200px;
         text-align: center;
+        margin-bottom: 200px;
     }
     #banner-car{
         transform: translateY(-50px);
+    }
+
+    .download-message{
+        text-align: center;
     }
     /* PRESENTATION */
     .user-description{
@@ -1148,3 +1164,7 @@ small{
     transform: translateX(0);
 }
 
+/* LANGUAGES */
+.dn{
+    display: none;
+}
