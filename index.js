@@ -106,25 +106,25 @@ modals.forEach((ele)=>{
 
 
 //FORM
-let allInputs = document.querySelectorAll('input,textarea')
-let allInputsValues = [... allInputs].map(ele => ele.value);
+// let allInputs = document.querySelectorAll('input,textarea')
+// let allInputsValues = [... allInputs].map(ele => ele.value);
 
-console.log(allInputs)
-console.log(allInputsValues)
+// console.log(allInputs)
+// console.log(allInputsValues)
 
-allInputs.forEach( ele =>{
-    ele.addEventListener('keyup',()=>{
-        if (checkEmptyFields()===false){
-            document.querySelector('#contact-form button').setAttribute('disabled', 'false');
-        }
-    })
-})
+// // allInputs.forEach( ele =>{
+// //     ele.addEventListener('keyup',()=>{
+// //         if (checkEmptyFields()===false){
+// //             document.querySelector('#contact-form button').setAttribute('disabled', 'false');
+// //         }
+// //     })
+// // })
 
-// Object.keys(allInputs).forEach((key)=>{
-//     allInputs[key].addEventListener('change',()=>{
-//         console.log('changing');
-//             // !checkEmptyFields() ? document.querySelector('#contact-form button').setAttribute('disabled', 'false') : '';
-//     })
-// })
+// // Object.keys(allInputs).forEach((key)=>{
+// //     allInputs[key].addEventListener('change',()=>{
+// //         console.log('changing');
+// //             // !checkEmptyFields() ? document.querySelector('#contact-form button').setAttribute('disabled', 'false') : '';
+// //     })
+// // })
 
-const checkEmptyFields = () => ([... allInputs].map(ele => ele.value).includes(''));
+// // const checkEmptyFields = () => ([... allInputs].map(ele => ele.value).includes(''));

@@ -1,14 +1,26 @@
 <?php
+
 $fname = null;
 $lname = null;
 $email = null;
 $message = null;
+
+
+
 if (isset($_POST)) {
     $fname = htmlentities($_POST['fname']);
     $lname = htmlentities($_POST['lname']);
     $email = htmlentities($_POST['email']);
     $message = htmlentities($_POST['message']);
 }
+
+$receiver = 'boris.boulogne@gmail.com'; 
+$subject = 'New message from'.$fname.' '.$lname ;
+$content = $message;
+
+mail($receiver, $subject, $content);
+// echo mail($receiver, $subject, $content);
+
 ?>
 
 <!DOCTYPE html>

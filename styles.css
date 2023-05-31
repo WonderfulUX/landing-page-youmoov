@@ -1011,7 +1011,7 @@ small{
         border: 1px solid red;
     }
 
-    input:not(#email):invalid{
+    input:invalid{
         border: 1px solid red;
     }
 

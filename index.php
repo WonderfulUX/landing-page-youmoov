@@ -1,6 +1,3 @@
-<?php 
-// echo '<pre>'.print_r($_POST, true).'</pre>';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
