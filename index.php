@@ -617,7 +617,7 @@
                                 <!-- PT -->
                                 <label class="pt dn" for="fname">Primeiro nome</label>
                                 <!-- -->
-                                <input type="text" class="fname" id="fname" name="fname" pattern="[a-zA-Z]+" >
+                                <input type="text" class="fname" id="fname" name="fname" pattern="[a-zA-Z]+" required>
                             </div>
                             <div class="input-box">
                                 <!-- FR -->
@@ -627,13 +627,13 @@
                                 <!-- PT -->
                                 <label class="pt dn" for="lname">Nome</label>
                                 <!-- -->
-                                <input type="text" class="lname" id="lname"  name="lname" pattern="[a-zA-Z]+">
+                                <input type="text" class="lname" id="lname"  name="lname" pattern="[a-zA-Z]+" required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-box">
                                 <label for="email">Email</label>
-                                <input type="email" class="email" id="email" name="email" >
+                                <input type="email" class="email" id="email" name="email" required>
                             </div>
                             <div class="input-box">
                                 <!-- FR -->
@@ -643,7 +643,7 @@
                                 <!-- PT -->
                                 <label class="pt dn" for="phone">Número de telefone</label>
                                 <!-- -->
-                                <input type="tel" class="phone" id="phone" name="phone" pattern="[0-9]+" >
+                                <input type="tel" class="phone" id="phone" name="phone" pattern="[0-9]+" required>
                             </div>
                         </div>
                         <div class="input-box message">
@@ -654,7 +654,7 @@
                             <!-- PT -->
                             <label class="pt dn" for="message">Mensagem</label>
                             <!--  -->
-                            <textarea name="message" id="message" rows="8"></textarea>
+                            <textarea name="message" id="message" rows="8" required></textarea>
                         </div>
                         <p class="errorMessage dn">
                             <!-- FR -->

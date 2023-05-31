@@ -106,22 +106,25 @@ modals.forEach((ele)=>{
 
 
 //FORM
-document.getElementById('contact-form').addEventListener('submit',(e)=>{
-    // e.preventDefault();
-    checkInput();
-    // sendEmail();
-});
+let allInputs = document.querySelectorAll('input,textarea')
+let allInputsValues = [... allInputs].map(ele => ele.value);
 
-inputs.forEach(input =>{
-    input.addEventListener('focus',()=>{
-        document.querySelector('.errorMessage:not(.dn)') && document.querySelector('.errorMessage').classList.add('dn');
+console.log(allInputs)
+console.log(allInputsValues)
+
+allInputs.forEach( ele =>{
+    ele.addEventListener('keyup',()=>{
+        if (checkEmptyFields()===false){
+            document.querySelector('#contact-form button').setAttribute('disabled', 'false');
+        }
     })
 })
 
-function checkInput(){
-    let fields = inputs.map(field => field.value);
-    console.log(fields)
-    if(fields.includes('')){
-        document.querySelector('.errorMessage').classList.remove('dn');
-    }
-}
+// Object.keys(allInputs).forEach((key)=>{
+//     allInputs[key].addEventListener('change',()=>{
+//         console.log('changing');
+//             // !checkEmptyFields() ? document.querySelector('#contact-form button').setAttribute('disabled', 'false') : '';
+//     })
+// })
+
+const checkEmptyFields = () => ([... allInputs].map(ele => ele.value).includes(''));
