@@ -5,19 +5,17 @@ let modals = document.querySelectorAll('.modal');
 let inputs = [... [... document.querySelectorAll('#contact-form input') ], document.querySelector('#contact-form textarea')];
 
 
-const bodyScrollToggle = ()=>{
-    document.body.classList.toggle('hide');
-}
+//LOCAL STORAGE
+!(localStorage.getItem('lang'))&& localStorage.setItem('lang', 'fr');
+
 
 //MOBILE MENU
 function togglemenu(){
-    bodyScrollToggle();
     menu.classList.toggle('slideIn');
 }
 
 mobileMenuLink.forEach(ele=>{
     ele.addEventListener('click', ()=>{
-        bodyScrollToggle()
         document.querySelector('.slideIn') && menu.classList.remove('slideIn');
     })
 })
@@ -26,7 +24,6 @@ mobileMenuLink.forEach(ele=>{
 //CHANGE LANGUAGE
 
 function changeLanguage(){
-    bodyScrollToggle();
     document.getElementById('language-modal').classList.add('poppedUp');
     setTimeout(()=>{
         document.getElementById('language-modal').querySelector('.modal-content').classList.add('displayed');
@@ -40,16 +37,19 @@ function switchTo(ele){
             [... document.querySelectorAll('.fr')].map(ele=>ele.classList.remove('dn'));
             [... document.querySelectorAll('.en')].map(ele=>ele.classList.add('dn'));
             [... document.querySelectorAll('.pt')].map(ele=>ele.classList.add('dn'));
+            localStorage.setItem('lang', 'fr')
             break;
         case 'English':
             [... document.querySelectorAll('.fr')].map(ele=>ele.classList.add('dn'));
             [... document.querySelectorAll('.en')].map(ele=>ele.classList.remove('dn'));
             [... document.querySelectorAll('.pt')].map(ele=>ele.classList.add('dn'));
+            localStorage.setItem('lang', 'en')
             break;
             case 'Português':
             [... document.querySelectorAll('.fr')].map(ele=>ele.classList.add('dn'));
             [... document.querySelectorAll('.en')].map(ele=>ele.classList.add('dn'));
             [... document.querySelectorAll('.pt')].map(ele=>ele.classList.remove('dn'));
+            localStorage.setItem('lang', 'pt')
             break;
     }
     document.querySelector('#language-modal .close').click();
@@ -59,21 +59,18 @@ function switchTo(ele){
 
 //MODALS
 function openConfidentiality(){
-    bodyScrollToggle();
     document.getElementById('confidentiality').classList.add('poppedUp');
     setTimeout(()=>{
         document.getElementById('confidentiality').querySelector('.modal-content').classList.add('displayed');
     },300)
 }
 function openTerms(){
-    bodyScrollToggle();
     document.getElementById('terms').classList.add('poppedUp');
     setTimeout(()=>{
         document.getElementById('terms').querySelector('.modal-content').classList.add('displayed');
     },300)
 }
 function openLegalNotice(){
-    bodyScrollToggle();
     document.getElementById('legal-notice').classList.add('poppedUp');
     setTimeout(()=>{
         document.getElementById('legal-notice').querySelector('.modal-content').classList.add('displayed');
@@ -83,7 +80,6 @@ function openLegalNotice(){
 
 closeBtns.forEach((ele)=>{
     ele.addEventListener('click',(ele)=>{
-        bodyScrollToggle()
         if(ele.target.parentElement.tagName==="BUTTON"){
             ele.target.parentElement.parentElement.querySelector('.modal-content').classList.remove('displayed');
             setTimeout(()=>{
@@ -111,9 +107,9 @@ modals.forEach((ele)=>{
 
 //FORM
 document.getElementById('contact-form').addEventListener('submit',(e)=>{
-    e.preventDefault();
+    // e.preventDefault();
     checkInput();
-    console.log('Submit');
+    // sendEmail();
 });
 
 inputs.forEach(input =>{
@@ -128,5 +124,4 @@ function checkInput(){
     if(fields.includes('')){
         document.querySelector('.errorMessage').classList.remove('dn');
     }
-   
 }

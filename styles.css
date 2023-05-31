@@ -73,9 +73,6 @@ body{
     padding-top: var(--headerheight);
 }
 
-.hide{
-    overflow: hidden;
-}
 
 /* HEADER */
 header{
@@ -664,10 +661,15 @@ label{
     user-select: none;
 }
 
-.feedblack-block.success{
+.feedback-block.success {
     color: var(--highlight-color);
+    text-align: center;
+    padding: 20px;
+    background: var(--highlight-light);
+    border-radius: 10px;
+    width: 400px;
+    opacity: 0;
 }
-
 /* FOOTER */
 footer{
     background: var(--textcolor);
@@ -858,6 +860,13 @@ small{
     margin-right: 8px;
 }
 
+/* CONFIRM */
+
+.feedback-block strong{
+    font-size: 26px;
+    line-height: 50px;
+}
+
 @media screen and (max-width:1200px){
     /* BANNER */
     .banner-content{
@@ -970,6 +979,17 @@ small{
     /* ONBOARDING */
     #onboarding .mask{
         width: 150%;
+    }
+
+    /* TRANSACTIONS */
+    
+    .transactions-headline{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .transactions-headline img{
+        margin-bottom: 12px;
     }
 
     /* CONTACT */
@@ -1085,8 +1105,6 @@ small{
     }
     .transactions-headline{
         font-size: 24px;
-        flex-direction: column;
-        text-align: center;
     }
 
     .transactions-method img{
@@ -1180,6 +1198,13 @@ small{
     .input-row, .input-box, input{
         width: 100%;
     }
+    .feedback-block.success{
+        width: 90%;
+        font-size: 13px;
+    }
+    .feedback-block strong{
+        font-size: 20px;
+    }
 }
 
 
@@ -1192,3 +1217,8 @@ small{
 .dn{
     display: none;
 }
+
+.feedback-block.success.oo{
+    opacity: 1;
+}
+
