@@ -15,11 +15,10 @@ if (isset($_POST)) {
 }
 
 $receiver = 'boris.boulogne@gmail.com'; 
-$subject = 'New message from'.$fname.' '.$lname ;
+$subject = 'New message from '.$fname.' '.$lname ;
 $content = $message;
 
 mail($receiver, $subject, $content);
-echo mail($receiver, $subject, $content);
 
 ?>
 
@@ -71,7 +70,7 @@ echo mail($receiver, $subject, $content);
 </head>
 
 <body>
-    <a href="/index.html">
+    <a href="./index.html" style="text-align: center">
         <img src="./assets/logo/youmoov_green.svg" alt="Youmoov">
     </a>
     <div class="feedback-block success dn">

@@ -604,7 +604,7 @@
                         </p>
                     </div>
                     <!--  -->
-                    <form action="/confirm.php" id="contact-form" method="post">
+                    <form action="confirm.php" id="contact-form" method="post">
                         <div class="input-row">
                             <div class="input-box">
                                 <!-- FR -->
