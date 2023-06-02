@@ -7,13 +7,13 @@ $message = null;
 
 
 if (isset($_POST)) {
-    $fname = htmlentities($_POST['fname']);
-    $lname = htmlentities($_POST['lname']);
-    $email = htmlentities($_POST['email']);
-    $message = htmlentities($_POST['message']);
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 }
 
-$receiver = 'info@youmoov.com'; 
+$receiver = 'info@youmoov.co'; 
 $subject = 'New message from '.$fname.' '.$lname ;
 $content = $message;
 $headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
