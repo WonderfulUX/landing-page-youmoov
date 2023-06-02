@@ -1,5 +1,4 @@
 <?php
-
 $fname = null;
 $lname = null;
 $email = null;
@@ -14,11 +13,12 @@ if (isset($_POST)) {
     $message = htmlentities($_POST['message']);
 }
 
-$receiver = 'boris.boulogne@gmail.com'; 
+$receiver = 'info@youmoov.com'; 
 $subject = 'New message from '.$fname.' '.$lname ;
 $content = $message;
+$headers = 'Content-Type: text/plain; charset=utf-8' . "\r\n";
 
-mail($receiver, $subject, $content);
+mail($receiver, $subject, $content, $headers);
 
 ?>
 
