@@ -40,6 +40,7 @@ input, textarea{
     --highlight-color: #22BB68;
     --highlight-gradient: #22BB68CC;
     --highlight-light: #E9F8F0;
+    --highlight-light-90: #22bb6890;
     --highlight-light-transparent: #E9F8F000;
     --textcolor: #111111;
     --blue-grey: #27346A08;
@@ -597,7 +598,7 @@ h4{
 }
 
 #partners img{
-    height: 300px;
+    height: 150px;
     margin: 80px 30px;
 }
 
@@ -696,15 +697,40 @@ footer{
 .footer-left{
     width: 300px;
 }
-.footer-left p{
+.footer-left p:not(.footer-partners-text){
     opacity: 0.5;
     font-weight: 300;
     font-size: 15px;
 }
+.footer-left .footer-partner{
+    height: 60px;
+    margin: 0;
+}
+
+.footer-partners{
+    border: 3px solid var(--highlight-color);
+    background: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.footer-partners-images{
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer-partners-text{
+    font-size: 12px;
+    color: var(--textcolor);
+    margin-bottom: 12px;
+}
 
 .footer-left img{
     height: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 footer .container{
@@ -894,6 +920,28 @@ small{
         height: 280px;
     }
 
+    .menu-link a{
+        line-height: 50px;
+        display: block;
+        width: 100%;
+    }
+
+    #mobile-menu-button{
+        display: unset;
+    }
+    #menu{
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 240px;
+        padding: 100px 0;
+        background: var(--highlight-light);
+        box-shadow: -4px 0 4px #11111115;
+        z-index: 70;
+        transform: translateX(105%);
+    }
     /* ONBOARDING */
 
     #onboarding .mask{
@@ -914,23 +962,7 @@ small{
         font-size: 9px;
     }
 
-    #mobile-menu-button{
-        display: unset;
-    }
 
-    #menu{
-        flex-direction: column;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        height: 100%;
-        width: 240px;
-        padding: 100px 0;
-        background: var(--highlight-light);
-        box-shadow: -4px 0 4px #11111115;
-        z-index: 70;
-        transform: translateX(105%);
-    }
 
     #menu-title{
         display: block;
@@ -1008,7 +1040,6 @@ small{
 
     /* PARTNERS */
     #partners img{
-        height: 250px;
         margin: 80px 20px;
     }
 
@@ -1131,12 +1162,6 @@ small{
         height: 40px;
     }
 
-    /* PARTNERS */
-    #partners img{
-        height: 200px;
-    }
-
-
     /* FOOTER */
     footer{
         padding-left: 0;
@@ -1201,12 +1226,6 @@ small{
     .transactions-headline{
         margin-bottom: 50px;
     }
-
-    /* PARTNERS */
-    #partners img{
-        height: 150px;
-    }
-
 
     /* MODALS */
     .modal-content-container::-webkit-scrollbar{
