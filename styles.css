@@ -588,6 +588,19 @@ h4{
     margin-top: 12px;
 }
 
+/* PARTNERS */
+
+#partners{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#partners img{
+    height: 300px;
+    margin: 80px 30px;
+}
+
 /* CONTACT */
 
 #contact{
@@ -993,6 +1006,12 @@ small{
         margin-bottom: 12px;
     }
 
+    /* PARTNERS */
+    #partners img{
+        height: 250px;
+        margin: 80px 20px;
+    }
+
     /* CONTACT */
     .contact-content{
         justify-content: center;
@@ -1112,6 +1131,12 @@ small{
         height: 40px;
     }
 
+    /* PARTNERS */
+    #partners img{
+        height: 200px;
+    }
+
+
     /* FOOTER */
     footer{
         padding-left: 0;
@@ -1177,6 +1202,12 @@ small{
         margin-bottom: 50px;
     }
 
+    /* PARTNERS */
+    #partners img{
+        height: 150px;
+    }
+
+
     /* MODALS */
     .modal-content-container::-webkit-scrollbar{
         display: none;
@@ -1205,6 +1236,11 @@ small{
     }
     .feedback-block strong{
         font-size: 20px;
+    }
+
+    /* PARTNERS */
+    #partners img{
+        height: 120px;
     }
 }
 
